@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Portafolio - Publicity Diseño y Clasificados</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="fondo-overlay"></div>
+
+  <header class="header">
+    <div class="logo">
+      <img src="img/logo-publicity.png" alt="Logo Publicity">
+    </div>
+    <nav class="nav">
+      <a href="index.html">INICIO</a>
+      <a href="#">NOSOTROS</a>
+      <a href="#">SERVICIOS</a>
+      <a href="portafolio.html" class="active">PORTAFOLIO</a>
+      <a href="#">CLIENTES</a>
+      <a href="index.html#contacto">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main class="portafolio-main">
+    <!-- Hero Section del Portafolio -->
+    <section class="portafolio-hero">
+      <div class="hero-content">
+        <h1>Nuestro Portafolio</h1>
+        <p>Descubre algunos de nuestros mejores trabajos en diseño y publicidad</p>
+      </div>
+    </section>
+
+    <!-- Filtros de Categorías -->
+    <section class="filtros-portafolio">
+      <div class="filtros-container">
+        <button class="filtro-btn active" data-categoria="todos">Todos</button>
+        <button class="filtro-btn" data-categoria="gran-formato">Gran Formato</button>
+        <button class="filtro-btn" data-categoria="litografia">Litografía</button>
+        <button class="filtro-btn" data-categoria="estampado">Estampado</button>
+        <button class="filtro-btn" data-categoria="logotipos">Logotipos</button>
+        <button class="filtro-btn" data-categoria="tarjeteria">Tarjetería</button>
+      </div>
+    </section>
+
+    <!-- Grid de Trabajos -->
+    <section class="trabajos-portafolio">
+      <div class="grid-trabajos">
+        <!-- Gran Formato -->
+        <div class="trabajo-item" data-categoria="gran-formato">
+          <div class="trabajo-imagen">
+            <img src="img/estampado.jpg" alt="Trabajo Gran Formato 1">
+            <div class="trabajo-overlay">
+              <h3>Valla Publicitaria</h3>
+              <p>Diseño e impresión de valla publicitaria para empresa local</p>
+              <button class="btn-ver-mas">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="trabajo-item" data-categoria="gran-formato">
+          <div class="trabajo-imagen">
+            <img src="img/parche-vinilo-agenda.jpg" alt="Trabajo Gran Formato 2">
+            <div class="trabajo-overlay">
+              <h3>Vinilos Decorativos</h3>
+              <p>Vinilos personalizados para oficina corporativa</p>
+              <button class="btn-ver-mas">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Litografía -->
+        <div class="trabajo-item" data-categoria="litografia">
+          <div class="trabajo-imagen">
+            <img src="img/estampado.jpg" alt="Trabajo Litografía 1">
+            <div class="trabajo-overlay">
+              <h3>Folleto Corporativo</h3>
+              <p>Diseño e impresión de folleto promocional</p>
+              <button class="btn-ver-mas">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estampado -->
+        <div class="trabajo-item" data-categoria="estampado">
+          <div class="trabajo-imagen">
+            <img src="img/estampado.jpg" alt="Trabajo Estampado 1">
+            <div class="trabajo-overlay">
+              <h3>Camisetas Personalizadas</h3>
+              <p>Estampado de camisetas para evento empresarial</p>
+              <button class="btn-ver-mas">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logotipos -->
+        <div class="trabajo-item" data-categoria="logotipos">
+          <div class="trabajo-imagen">
+            <img src="img/estampado.jpg" alt="Trabajo Logotipo 1">
+            <div class="trabajo-overlay">
+              <h3>Logo Restaurante</h3>
+              <p>Diseño de identidad visual para restaurante</p>
+              <button class="btn-ver-mas">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjetería -->
+        <div class="trabajo-item" data-categoria="tarjeteria">
+          <div class="trabajo-imagen">
+            <img src="img/estampado.jpg" alt="Trabajo Tarjetería 1">
+            <div class="trabajo-overlay">
+              <h3>Tarjetas de Presentación</h3>
+              <p>Diseño e impresión de tarjetas profesionales</p>
+              <button class="btn-ver-mas">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Más trabajos -->
+        <div class="trabajo-item" data-categoria="gran-formato">
+          <div class="trabajo-imagen">
+            <img src="img/mujerchamba.jpg" alt="Trabajo Gran Formato 3">
+            <div class="trabajo-overlay">
+              <h3>Banner Promocional</h3>
+              <p>Banner para evento de lanzamiento</p>
+              <button class="btn-ver-mas">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="trabajo-item" data-categoria="litografia">
+          <div class="trabajo-imagen">
+            <img src="img/parche-vinilo-agenda.jpg" alt="Trabajo Litografía 2">
+            <div class="trabajo-overlay">
+              <h3>Catálogo de Productos</h3>
+              <p>Diseño completo de catálogo empresarial</p>
+              <button class="btn-ver-mas">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section class="estadisticas-portafolio">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-numero">150+</div>
+          <div class="stat-texto">Proyectos Completados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-numero">50+</div>
+          <div class="stat-texto">Clientes Satisfechos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-numero">5+</div>
+          <div class="stat-texto">Años de Experiencia</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-numero">100%</div>
+          <div class="stat-texto">Compromiso con la Calidad</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-portafolio">
+      <div class="cta-content">
+        <h2>¿Te gustó nuestro trabajo?</h2>
+        <p>Contáctanos para hacer realidad tu próximo proyecto</p>
+        <a href="index.html#contacto" class="btn-cta">Solicitar Cotización</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>📍 Contacto</h3>
+        <p><strong>Dirección:</strong> Calle 123 #45-67, Bogotá, Colombia</p>
+        <p><strong>Teléfono:</strong> +57 310 559 6624</p>
+        <p><strong>Email:</strong> <a href="mailto:contacto@publicity.com">contacto@publicity.com</a></p>
+      </div>
+  
+      <div class="footer-col">
+        <h3>🌐 Síguenos</h3>
+        <div class="social-links">
+          <a href="#" target="_blank">Facebook</a> |
+          <a href="#" target="_blank">Instagram</a> |
+          <a href="#" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 <strong>Publicity</strong>. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Burbuja flotante de WhatsApp -->
+  <a href="https://wa.me/573105596624" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+  <script src="portafolio.js"></script>
+</body>
+</html> 

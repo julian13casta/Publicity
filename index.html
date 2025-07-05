@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Publicity - Diseño y Clasificados</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuente moderna de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome para íconos de redes sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <section class="slider">
+    <div class="slides">
+      <div class="slide"><img src="img/mujerchamba.jpg" alt="Imagen 1"></div>
+      <div class="slide"><img src="img/parche-vinilo-agenda.jpg" alt="Imagen 2"></div>
+      <div class="slide"><img src="img/estampado.jpg" alt="Imagen 3"></div>
+    </div>
+    
+    <!-- Flechas de navegación -->
+    <button class="slider-btn prev-btn" onclick="prevSlide()">❮</button>
+    <button class="slider-btn next-btn" onclick="nextSlide()">❯</button>
+  
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </section>
+  
+  <div class="fondo-overlay"></div>
+
+  <header class="header">
+    <div class="logo">
+      <img src="img/logo-publicity.png" alt="Logo Publicity">
+
+    </div>
+    <nav class="nav">
+      <a href="#">INICIO</a>
+      <a href="#">NOSOTROS</a>
+      <a href="#">SERVICIOS</a>
+      <a href="portafolio.html">PORTAFOLIO</a>
+      <a href="#">CLIENTES</a>
+      <a href="#contacto">CONTACTO</a>
+
+        </nav>
+    
+  </header>
+  
+  <!-- Sección Hero de Información -->
+  <section class="hero-info">
+    <div class="hero-info-content">
+      <h1>Publicity - Tu Socio en Publicidad</h1>
+      <p class="hero-subtitle">Transformamos ideas en impactantes campañas publicitarias que conectan con tu audiencia</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Campañas Exitosas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">200+</span>
+          <span class="stat-label">Clientes Satisfechos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Años de Experiencia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios de Publicidad -->
+  <section class="servicios-publicidad">
+    <div class="container">
+      <h2>Nuestros Servicios de Publicidad</h2>
+      <p class="section-description">Ofrecemos soluciones integrales de publicidad para hacer crecer tu negocio</p>
+      
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <div class="servicio-icon">🎨</div>
+          <h3>Diseño Gráfico</h3>
+          <p>Creamos diseños únicos y memorables que representan perfectamente tu marca</p>
+          <ul>
+            <li>Logotipos y branding</li>
+            <li>Material promocional</li>
+            <li>Diseño web</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-icon">🖨️</div>
+          <h3>Impresión Digital</h3>
+          <p>Impresión de alta calidad para todos tus materiales publicitarios</p>
+          <ul>
+            <li>Gran formato</li>
+            <li>Vinilos adhesivos</li>
+            <li>Banners y lonas</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-icon">👕</div>
+          <h3>Merchandising</h3>
+          <p>Productos personalizados que promocionan tu marca</p>
+          <ul>
+            <li>Camisetas estampadas</li>
+            <li>Gorras y accesorios</li>
+            <li>Material promocional</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-icon">📱</div>
+          <h3>Publicidad Digital</h3>
+          <p>Estrategias digitales para llegar a tu audiencia online</p>
+          <ul>
+            <li>Redes sociales</li>
+            <li>Google Ads</li>
+            <li>Email marketing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Por Qué Elegirnos -->
+  <section class="por-que-elegirnos">
+    <div class="container">
+      <h2>¿Por Qué Elegir Publicity?</h2>
+      <div class="razones-grid">
+        <div class="razon-item">
+          <div class="razon-icon">⚡</div>
+          <h3>Rapidez</h3>
+          <p>Entregamos tus proyectos en tiempo récord sin comprometer la calidad</p>
+        </div>
+        
+        <div class="razon-item">
+          <div class="razon-icon">💡</div>
+          <h3>Creatividad</h3>
+          <p>Ideas innovadoras que destacan tu marca de la competencia</p>
+        </div>
+        
+        <div class="razon-item">
+          <div class="razon-icon">💰</div>
+          <h3>Precios Justos</h3>
+          <p>Calidad profesional a precios accesibles para tu presupuesto</p>
+        </div>
+        
+        <div class="razon-item">
+          <div class="razon-icon">🤝</div>
+          <h3>Atención Personalizada</h3>
+          <p>Te acompañamos en todo el proceso con atención dedicada</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Proceso de Trabajo -->
+  <section class="proceso-trabajo">
+    <div class="container">
+      <h2>Nuestro Proceso de Trabajo</h2>
+      <div class="proceso-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Consulta</h3>
+          <p>Conversamos sobre tus necesidades y objetivos</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Propuesta</h3>
+          <p>Desarrollamos una propuesta personalizada</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Diseño</h3>
+          <p>Creamos el diseño según tus especificaciones</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Entrega</h3>
+          <p>Entregamos tu proyecto listo para usar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Testimonios -->
+  <section class="testimonios">
+    <div class="container">
+      <h2>Lo Que Dicen Nuestros Clientes</h2>
+      <div class="testimonios-grid">
+        <div class="testimonio-card">
+          <div class="testimonio-texto">
+            "Publicity transformó completamente la imagen de mi negocio. Su trabajo es profesional y creativo."
+          </div>
+          <div class="testimonio-autor">
+            <strong>María González</strong>
+            <span>Restaurante El Sabor</span>
+          </div>
+        </div>
+        
+        <div class="testimonio-card">
+          <div class="testimonio-texto">
+            "Excelente servicio y resultados. Recomiendo Publicity para cualquier proyecto publicitario."
+          </div>
+          <div class="testimonio-autor">
+            <strong>Carlos Rodríguez</strong>
+            <span>Gimnasio Fitness Pro</span>
+          </div>
+        </div>
+        
+        <div class="testimonio-card">
+          <div class="testimonio-texto">
+            "Rápidos, creativos y con precios justos. Definitivamente volveré a trabajar con ellos."
+          </div>
+          <div class="testimonio-autor">
+            <strong>Ana Martínez</strong>
+            <span>Boutique Fashion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACTO-->
+  <section id="contacto" class="contacto-section contact-modern">
+    <h2 class="contact-title">Contáctanos</h2>
+    <p class="contact-subtitle">¿Tienes una pregunta o quieres iniciar tu próximo proyecto publicitario? Escríbenos y te responderemos lo antes posible.</p>
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:contacto@publicity.com">contacto@publicity.com</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>Teléfono</strong><br>
+            <a href="tel:+573105596624">+57 310 559 6624</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Dirección</strong><br>
+            Calle 123 #45-67<br>Bogotá, Colombia
+          </div>
+        </div>
+        <hr>
+        <div class="contact-info-hours">
+          <strong>Horarios de Atención</strong><br>
+          Lunes - Viernes: 8:00 AM - 6:00 PM<br>
+          Sábado: 9:00 AM - 2:00 PM<br>
+          Domingo: Cerrado
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="privacidad" required>
+          <label for="privacidad">Acepto el tratamiento de mis datos personales</label>
+        </div>
+        <button type="submit" class="btn-enviar"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.922753978535!2d-74.1030793!3d4.8101618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f87a0ef3d4063%3A0x17bbe30efd8095d1!2sPublicity%20dise%C3%B1o%20y%20clasificados!5e0!3m2!1ses!2sco!4v1720205412840!5m2!1ses!2sco"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <a href="https://www.google.com/maps/place/Publicity+dise%C3%B1o+y+clasificados/@4.8102326,-74.1029227,19.25z/data=!4m6!3m5!1s0x8e3f87a0ef3d4063:0x17bbe30efd8095d1!8m2!3d4.8101618!4d-74.1030793!16s%2Fg%2F11h2m9pmkf?entry=ttu" target="_blank" class="btn-maps">
+      Ver ruta en Google Maps
+    </a>
+  </section>
+
+  <!-- FOOTER NUEVO -->
+  <footer class="footer footer-modern">
+    <div class="footer-container footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <img src="img/logo-publicity.png" alt="Logo Publicity" style="height:48px;">
+          <span class="footer-brand-name">Publicity</span>
+        </div>
+        <p>Soluciones profesionales de diseño e impresión para empresas de todos los tamaños. Da vida a tus ideas con colores vibrantes y calidad excepcional.</p>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="#">Tarjetas de Presentación</a></li>
+          <li><a href="#">Volantes y Folletos</a></li>
+          <li><a href="#">Pósters</a></li>
+          <li><a href="#">Banners</a></li>
+          <li><a href="#">Artículos Promocionales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#">Impresión Digital</a></li>
+          <li><a href="#">Diseño Gráfico</a></li>
+          <li><a href="#">Gran Formato</a></li>
+          <li><a href="#">Acabados</a></li>
+          <li><a href="#">Publicidad Directa</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="#">Precios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>© 2025 <strong>Publicity</strong>. Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+          <a href="#">Términos de Servicio</a> |
+          <a href="#">Política de Privacidad</a> |
+          <a href="#">Mapa del Sitio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Burbuja flotante de WhatsApp -->
+  <a href="https://wa.me/573105596624" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
